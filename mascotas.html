@@ -1,36 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Mascotas</title>
+    <title>Mis Mascotas | Keiner Martinez</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Importante para los iconos que usas en el index -->
+    <script src="https://fontawesome.com" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <!--MASCOTAS-->
+    <!-- HEADER IGUAL AL INDEX (Tarea 2 Semana 2: Flexbox) -->
     <header>
-        <h1>Mis mascotas</h1>
+        <nav id="navbar">
+            <div class="logo">Keiner<span>Martinez</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#proyectos">Proyectos</a></li>
+
+            </ul>
+        </nav>
     </header>
 
-    <!--CONTENIDO DE LAS MASCOTAS-->
-    <section>
-        <article>
-            <img src="aa.jpg" alt="lalo">
-            <p> Este es mi perrito Lalo, tiene 3 meses.</p>
-        </article>
-        <article>
-            <img src="descarga.jpg" alt="asgard">
-            <p> Este es mi perro Asgard, tiene 2 años.</p>
-        </article>
-        <article>
-            <img src="as.jpg" alt="tom">
-            <p> Este es mi gato Tom, tiene 1 año.</p>
-        </article>
-    </section>
+    <main>
+        <section class="section">
+            <h2 class="section-title">Mis Mascotas</h2>
 
-    <nav>
-        <a href="index.html">Volver a la pagina principal</a>
-    </nav>
-    
+            <!-- CONTENEDOR GRID (Tarea 3 y 4 Semana 2: Grid Layout) -->
+            <div class="projects-container">
+                <article class="project-card">
+                    <div class="project-info">
+                        <img src="image/aa.jpg" alt="Lalo" class="hero-image-style">
+                        <h3>Lalo</h3>
+                        <p>Este es mi perrito Lalo, tiene 3 meses.</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-info">
+                        <img src="image/descarga.jpg" alt="Asgard" class="hero-image-style">
+                        <h3>Asgard</h3>
+                        <p>Este es mi perro Asgard, tiene 2 años.</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-info">
+                        <img src="image/as.jpg" alt="Tom" class="hero-image-style">
+                        <h3>Tom</h3>
+                        <p>Este es mi gato Tom, tiene 1 año.</p>
+                    </div>
+                </article>
+
+                <!-- Agregamos 3 más para completar las 6 que pide la tarea -->
+                <article class="project-card">
+                    <div class="project-info">
+                        <img src="image/ti.jpg" alt="Tigre">
+                        <h3>Tigger</h3>
+                        <p>Come mucho.</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-info">
+                        <img src="image/loro.jpg" alt="Loro" class="hero-image-style">
+                        <h3>Lori</h3>
+                        <p>Esta es mi lorita, tiene 1 año.</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-info">
+                        <img src="image/gallo.jpg" alt="gallo">
+                        <h3>Sancocho</h3>
+                        <p>Este es mi gallo Sancocho, tiene 9 meses.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="btn-container">
+                <a href="index.html" class="btn">Volver a la página principal</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Keiner Martinez - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Tarea 5 Semana 3: Interactividad -->
+    <script src="script.js"></script>
 </body>
+
 </html>
